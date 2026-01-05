@@ -16,7 +16,9 @@ GEM
     faraday-net_http (2.0.3)
     ffi (1.15.5)
     forwardable-extended (2.6.0)
-    google-protobuf (3.25.3)
+    google-protobuf (3.25.3-arm64-darwin)
+    google-protobuf (3.25.3-x64-mingw-ucrt)
+    google-protobuf (3.25.3-x86_64-linux)
     http_parser.rb (0.8.0)
     i18n (1.14.5)
       concurrent-ruby (~> 1.0)
@@ -57,6 +59,7 @@ GEM
     pathutil (0.16.2)
       forwardable-extended (~> 2.6)
     public_suffix (4.0.7)
+    rake (13.3.1)
     rb-fsevent (0.11.2)
     rb-inotify (0.11.1)
       ffi (~> 1.0)
@@ -89,6 +92,7 @@ DEPENDENCIES
   csv
   jekyll (~> 4.3.3)
   jekyll-gist
+  rake
   rouge
   tzinfo (~> 1.2)
   tzinfo-data
