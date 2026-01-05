@@ -2,9 +2,9 @@
 # Edit next line to provide your own name.
 title: Innocent Ngoy | Professional Portfolio
 # Edit next line, replacing 'techfolios' with your github username
-url: "https://github.com/Inongoy"
+url: "https://inongoy.github.io"
 # Edit next line so that baseurl is "" if your repo is <username>.github.io
-baseurl: ""
+baseurl: "/portfolio"
 
 # OPTIONAL CHANGES
 ## Specify the theme using any of the css files in css/techfolio-theme
