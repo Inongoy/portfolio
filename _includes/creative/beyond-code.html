@@ -1,0 +1,163 @@
+<div style="background-color: var(--bs-white)" class="bg-gradient py-3" id="beyond-code">
+  <div class="container">
+    <div class="row mb-3">
+      <div class="col-md-6">
+        <h1 class="display-4 text-start">Beyond Code</h1>
+      </div>
+    </div>
+
+    <div class="row mb-3">
+      <div class="col-lg-9">
+        <p class="lead m-0">
+          Outside of software engineering, I work in photography and visual media.
+          This creative work strengthens my attention to detail, composition, and product design mindset.
+        </p>
+      </div>
+    </div>
+
+    <div class="row g-3">
+      {% assign creative_pages = site.pages | where: "type", "creative" | sort: "date" | reverse %}
+      {% for page in creative_pages %}
+        {% unless page.draft %}
+          {% include creative/creative-card.html page=page %}
+        {% endunless %}
+        {% if forloop.index == include.limit %}
+          {% break %}
+        {% endif %}
+      {% endfor %}
+    </div>
+
+    {% assign not_draft = 0 %}
+    {% for page in creative_pages %}
+      {% unless page.draft %}
+        {% assign not_draft = not_draft | plus: 1 %}
+      {% endunless %}
+    {% endfor %}
+
+    {% if not_draft > include.limit %}
+      <p class="text-center pt-4">
+        <a href="{{ site.baseurl }}/creative/">See all {{ not_draft }} items</a>
+      </p>
+    {% endif %}
+
+    <!-- FIXED SIZE MODAL -->
+    <div class="modal fade" id="creativeModal" tabindex="-1" aria-hidden="true">
+      <div
+        class="modal-dialog modal-dialog-centered"
+        style="max-width: 95vw; width: 900px;"
+      >
+        <div class="modal-content" style="height: 600px;">
+          <div class="modal-header">
+            <h5 class="modal-title" id="creativeModalTitle">Creative Work</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <div
+            class="modal-body"
+            style="height: 500px; overflow: hidden; padding: 0;"
+          >
+            <div
+              id="creativeCarousel"
+              class="carousel slide"
+              data-bs-ride="false"
+              style="height: 100%; width: 100%;"
+            >
+              <div
+                class="carousel-inner"
+                id="creativeCarouselInner"
+                style="height: 100%;"
+              ></div>
+
+              <button class="carousel-control-prev" type="button" data-bs-target="#creativeCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+
+              <button class="carousel-control-next" type="button" data-bs-target="#creativeCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Allure Media (Logo + Brief Description) -->
+<div class="row mt-5">
+  <div class="col-12 text-center">
+    <img
+      src="{{ '/img/ALLURE/Allure.JPG' | relative_url }}"
+      alt="Allure Media logo"
+      style="max-width: 140px; width: 100%;  margin-bottom: 0.75rem; opacity: 0.9;"
+    />
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-lg-9 mx-auto">
+    <p class="lead text-center m-0">
+      Allure Media is an evolving creative media brand focused on visual storytelling and brand identity.
+      Photography and videography projects are currently in development and will live on the official
+      Allure platform in the future.
+    </p>
+  </div>
+</div>
+
+
+    <!-- MODAL SCRIPT -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const modalEl = document.getElementById("creativeModal");
+        const titleEl = document.getElementById("creativeModalTitle");
+        const innerEl = document.getElementById("creativeCarouselInner");
+
+        modalEl.addEventListener("show.bs.modal", function (event) {
+          const btn = event.relatedTarget;
+          const title = btn.getAttribute("data-title") || "Creative Work";
+          const imagesJson = btn.getAttribute("data-images") || "[]";
+          let images = [];
+
+          try {
+            images = JSON.parse(imagesJson);
+          } catch {
+            images = [];
+          }
+
+          titleEl.textContent = title;
+          innerEl.innerHTML = "";
+
+          if (!images.length) {
+            innerEl.innerHTML = `
+              <div class="carousel-item active" style="height: 100%;">
+                <div style="height:100%; display:flex; align-items:center; justify-content:center;">
+                  <p>No images found.</p>
+                </div>
+              </div>
+            `;
+            return;
+          }
+
+          images.forEach((src, idx) => {
+            const slide = document.createElement("div");
+            slide.className = "carousel-item" + (idx === 0 ? " active" : "");
+            slide.style.height = "100%";
+
+            slide.innerHTML = `
+              <div style="height:100%; width:100%; display:flex; align-items:center; justify-content:center;">
+                <img
+                  src="${src}"
+                  alt=""
+                  style="max-height:100%; max-width:100%; width:auto; height:auto; object-fit:contain;"
+                >
+              </div>
+            `;
+
+            innerEl.appendChild(slide);
+          });
+        });
+      });
+    </script>
+
+  </div>
+</div>
+
+

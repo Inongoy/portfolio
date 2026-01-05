@@ -1,0 +1,47 @@
+<div class="col-md-6 col-lg-4" xmlns="http://www.w3.org/1999/html">
+  <div class="card h-10">
+    {% if include.page.image %}
+      <img src="{{ include.page.image | relative_url }}" class="card-img-top" alt="{{ include.page.title }}">
+    {% endif %}
+
+    <div class="card-body">
+      <h5 class="card-title">{{ include.page.title }}</h5>
+
+      {% if include.page.date %}
+        <p class="card-text">
+          <small class="text-muted">{{ include.page.date | date_to_string }}</small>
+        </p>
+      {% endif %}
+
+      <p class="card-text">{{ include.page.content | markdownify | strip_html | truncatewords: 30 }}</p>
+
+      {% if include.page.labels %}
+        <p class="mb-0">
+          {% for label in include.page.labels %}
+            <span style="background-color: var(--tf-pill-bg)" class="badge rounded-pill">{{ label }}</span>
+          {% endfor %}
+        </p>
+      {% endif %}
+    </div>
+
+    <div class="card-footer">
+      <div class="text-center">
+        <button
+            type="button"
+            class="btn btn-outline-dark"
+            data-bs-toggle="modal"
+            data-bs-target="#creativeModal"
+            data-title="{{ include.page.title | escape }}"
+            data-images='[
+                {% for img in include.page.images %}
+                "{{ img | relative_url }}"{% unless forloop.last %},{% endunless %}
+                {% endfor %}
+            ]'
+        >
+            View
+        </button>
+
+      </div>
+    </div>
+  </div>
+</div>

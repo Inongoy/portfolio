@@ -1,0 +1,94 @@
+{
+  "basics": {
+    "name": "Innocent Ngoy",
+    "label": "Software Engineering student focused on backend systems and full-stack applications",
+    "picture": "/img/MG_1428.jpg",
+    "email": "Ingoy247@icloud.com",
+    "phone": "+1 (226) 503-1698",
+    "summary": "Software engineering student with hands-on experience building and deploying full-stack applications using React, Node.js, Express, SQL, Java, and C++. I focus on applying software engineering principles to real-world projects that connect technology, business, and user needs. Seeking junior software engineering roles with room to grow.",
+    "location": { "address": "", "postalCode": "N6J 3S7", "city": "London", "countryCode": "Canada", "region": "Ontario" },
+    "profiles": [
+      { "network": "github", "username": "inongoy", "url": "https://github.com/Inongoy" },
+      { "network": "linkedin", "username": "Innocent Ngoy", "url": "https://www.linkedin.com/in/innocent-ngoy-68ba24253/" },
+      { "network": "instagram", "username": "Innocent Ngoy", "url": "https://www.instagram.com/inos.gallery?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw==" }
+    ]
+  },
+
+  "summary": "Software engineering student with a strong foundation in computer science principles developed through academic coursework and hands-on projects. Experienced in applying data structures, algorithms, object-oriented programming, and database concepts to build reliable and maintainable software systems. Focused on problem solving, system design, and writing efficient, scalable code in collaborative environments."
+  ,
+
+  "interests": [
+    { "name": "Backend Systems" },
+    { "name": "Software Architecture" },
+    { "name": "APIs & Distributed Systems" },
+    { "name": "System Design" },
+    { "name": "Photography/Videography" },
+    { "name": "Problem Solving" }
+  ],
+  
+  "skills": [
+    {
+      "name": "Hard Skills",
+      "keywords": [ "Full-stack Web Development", "Databases", "Front-end Frameworks", "Back-end frameworks", "Programming", "SQL", "JavaScript", "HTML/CSS", "Node.js", "React", "C++", "Java", "Python", "Operating systems", "Github", "Microsoft Office", "Excel", "Word" ]
+    },
+    {
+      "name": "Soft Skills",
+      "keywords": [ "Critical thinking", "Communication", "Problem-Solving", "Leadership", "Adaptability", "Teamwork", "Creativity", "Customer Service", "Interpersonal skills", "Active listening" ]
+    }
+  ],
+  "education": [
+    {
+      "institution": "Fanshawe College of Applied Arts and Technology, London, ON",
+      "area": "Computer Programming and Analysis (expected spring 2027)",
+      "studyType": "Advanced Diploma",
+      "startDate": "2023-09-01",
+      "endDate": "Present",
+      "courses": [ "Data Structures & Algorithms", "Object-Oriented Programming with C++", "Advanced Databases/SQL", "Web Development", "Software Engineering / Design Patterns", "Operating Systems", "Networking Fundamentals", "Computer Architecture / Systems Programming"
+      ]
+    },
+    {
+      "institution": "University of Toronto School of Continuing Studies, Toronto, ON",
+      "area": "Full-Stack Web Development",
+      "studyType": "Certificate",
+      "startDate": "2022-06-01",
+      "endDate": "2022-12-01",
+      "courses": [ "Full-stack Web Development", "HTML5 & CSS3", "JavaScript & jQuery", "Responsive Web Design", "Node.js & Express", "MongoDB & Mongoose", "React.js", "APIs & JSON", "Version Control with Git"
+      ]
+    }
+  ],
+  "work": [
+    {
+      "company": "Pursuit Media",
+      "position": "Photographer",
+      "website": "https://www.pursuitmedia.ca/",
+      "startDate": "2025-07-01",
+      "endDate": "Present",
+      "summary": "Freelance photographer for various events and projects",
+      "highlights": [
+        "Gained confidence in leading and interacting with models in an efficient manner, which is a crucial ability when guiding clients and models in photography",
+        "Like working with creative teams, stylists, and assistants during photo shoots, I successfully collaborated with a team to produce flawless customer experiences.",
+        "Developed an understanding of colour harmony and detail, which I used for retouching, colour correction, and accurate photo editing."
+      ]
+    },
+    {
+      "company": "Landmark Cinemas",
+      "position": "Crew Member",
+      "website": "",
+      "startDate": "2023-06-01",
+      "endDate": "2025-10-15",
+      "summary": "",
+      "highlights": [
+        "Provided friendly and efficient service to guests, ensuring a positive movie-going experience",
+        "Processed cash, debit, and credit transactions accurately and efficiently using POS systems.",
+        "Interacted effectively with guests and teammates in a fast-paced, customer-focused environment.",
+        "Worked efficiently in high-pressure situations and adapted to changing shift duties or priorities"
+      ]
+    }
+  ],
+ 
+  "references": [
+    {
+      "name": "Available upon request"
+    }
+  ]
+}
