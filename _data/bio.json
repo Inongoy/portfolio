@@ -1,11 +1,11 @@
 {
   "basics": {
     "name": "Innocent Ngoy",
-    "label": "Software Engineering student focused on backend systems and full-stack applications",
+    "label": "Backend focused software engineering student with full stack experience",
     "picture": "/img/MG_1428.jpg",
     "email": "Ingoy247@icloud.com",
-    "phone": "+1 (226) 503-1698",
-    "summary": "Software engineering student with hands-on experience building and deploying full-stack applications using React, Node.js, Express, SQL, Java, and C++. I focus on applying software engineering principles to real-world projects that connect technology, business, and user needs. Seeking junior software engineering roles with room to grow.",
+    "phone": "Available upon requestsss",
+    "summary": "Software engineering student with hands on experience building and deploying full stack applications using React Node.js Express SQL Java and C++. I have a strong interest in backend systems API development and database design, while maintaining solid front end integration skills. I apply core software engineering principles such as clean architecture modular design and performance awareness to real world projects. Currently seeking a software engineering internship where I can contribute to production level systems, learn from experienced engineers, and continue strengthening my technical foundation.",
     "location": { "address": "", "postalCode": "N6J 3S7", "city": "London", "countryCode": "Canada", "region": "Ontario" },
     "profiles": [
       { "network": "github", "username": "inongoy", "url": "https://github.com/Inongoy" },
