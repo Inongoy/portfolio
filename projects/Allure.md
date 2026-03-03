@@ -1,7 +1,7 @@
 ---
 layout: project
 type: project
-image: img/ALLURE/1.png
+image: img/ALLURE/1.5.png
 title: "Allure"
 date: 2026
 published: true
@@ -16,6 +16,7 @@ summary: "Creative Media & Digital Systems"
 ---
 
 <div class="text-center p-4">
+  <img width="400px" src="../img/ALLURE/1.png" class="img-thumbnail" >
   <img width="400px" src="../img/ALLURE/2.png" class="img-thumbnail" >
   <img width="400px" src="../img/ALLURE/3.png" class="img-thumbnail" >
   <img width="400px" src="../img/ALLURE/4.png" class="img-thumbnail" >
